@@ -18,28 +18,28 @@ function Navbar() {
             <a className="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li className="nav-item" >
-            <a className="nav-link" href="/">Edit Image</a>
+            <a className="nav-link" href="/editimage">Edit Image</a>
           </li>
          
-          {/* <li className="nav-item dropdown">
+          <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               PDF Tools
             </a>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a className="dropdown-item" href="#">Compress Pdf</a></li>
-              <li><a className="dropdown-item" href="#">JPG to Pdf</a></li>
+              <li><a className="dropdown-item" href="/">Compress Pdf</a></li>
+              <li><a className="dropdown-item" href="/">JPG to Pdf</a></li>
               <li><hr className="dropdown-divider" /></li>
-              <li><a className="dropdown-item" href="#">Merge Pdf</a></li>
+              <li><a className="dropdown-item" href="/">Merge Pdf</a></li>
             </ul>
-          </li> */}
+          </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">Compress Pdf</a>
+            <a className="nav-link" href="/card">Compress Pdf</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/">JPG to Pdf</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">Merge Pdf</a>
+            <a className="nav-link" href="/temp">Merge Pdf</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/">Contact Us</a>

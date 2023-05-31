@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 
 
-class card extends Component {
+class Card extends Component {
   render(){
   return (
     <div>
@@ -22,4 +22,4 @@ class card extends Component {
     }
 }
 
-export default card;
+export default Card;

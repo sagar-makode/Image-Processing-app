@@ -5,9 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    background-color: #e9ecef; 
+    /* font-family: 'Roboto Serif', serif; */
+    /* font-family: 'Roboto Serif', serif; */
+/* font-family: 'Rubik', sans-serif; */
+   
 }
+
+
+
+.navbar{
+   font-family: 'Roboto Serif', serif;
+font-family: 'Rubik', sans-serif;
+
+
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    /* font-family: 'Roboto Serif', serif; */
+    /* font-family: 'Roboto Serif', serif;
+font-family: 'Rubik', sans-serif; */
+
 }
+

@@ -7,7 +7,7 @@ import 'react-image-crop/dist/ReactCrop.css';
 
 
 
-class uploaddata extends Component {
+class Uploaddata extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -152,7 +152,7 @@ class uploaddata extends Component {
                 <button className="container mt-4" onClick={this.handleDownload}>Download</button>
 
               </div>
-
+ 
 
               <div className="mb-3">
                 <label htmlFor="formFile" className="form-label">Signature</label>
@@ -176,7 +176,7 @@ class uploaddata extends Component {
 
 
 
-export default uploaddata;
+export default Uploaddata;
 
 
 
