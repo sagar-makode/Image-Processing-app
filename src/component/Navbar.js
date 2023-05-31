@@ -29,7 +29,7 @@ function Navbar() {
                             <div className="dropdown-menu m-0">
                                 <a href="/" className="dropdown-item">Diploma Admission</a>
                                 <a href="/" className="dropdown-item">ITI Admission</a>
-                                <a href="/l" className="dropdown-item">Medical Admission</a>
+                                <a href="/" className="dropdown-item">Medical Admission</a>
                             </div>
                         </div>
                         <a href="/" className="nav-item nav-link">Contact</a>
