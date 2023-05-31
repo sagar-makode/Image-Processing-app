@@ -1,110 +1,171 @@
 import React from 'react'
-import imagecomp from  "../asset/imagecomp.png"
-import pdfcomp from  "../asset/pdfcomp.png"
-import homeImg from  "../asset/newhome.jpg"
-
-
-import './Home.css'
-
-
-import { useNavigate } from "react-router-dom"
-
-// const imageurl = "https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-
-
-
+import img from "./img/hero.png"
 
 
 function Home() {
-  const navigate = useNavigate();
-  const handelClick = () => {
-    navigate('/editimage')
-  }
+ 
 
   return (
     <>
 
-      <div style={{ position: "relative" , textAlign:"center"}}>
-        <img className='photo' src={homeImg} alt='homeImg' />
+      <div className="container-xxl bg-white p-0">
+        
+       
+        <div className="container-xxl bg-primary hero-header">
+                <div className="container px-lg-5">
+                    <div className="row g-5 align-items-end">
+                        <div className="col-lg-6 text-center text-lg-start">
+                            <h1 className="text-white mb-4 animated slideInDown">Make Your Image / PDF Without Losing Quality</h1>
+                            <p className="text-white pb-3 animated slideInDown">In this service that helps you improve your images and PDF documents without reducing their visual appeal. It allows you to make changes like reducing file size, resizing images, converting formats, and compressing PDFs while ensuring the content looks great.</p>
+                            <a href="/" className="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Read More</a>
+                            <a href="/" className="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                        </div>
+                        <div className="col-lg-6 text-center text-lg-start">
+                            <img className="img-fluid animated zoomIn" src= {img} alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        {/* <h1>Make Your document Here</h1> */}
+        <div className="container-xxl py-5">
+          <div className="container py-5 px-lg-5">
+            <div className="row g-4">
+              <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.1s" onClick={() => window.location.href = "/editimage"}>
+                <div className="feature-item bg-light rounded text-center p-4">
+                  <i className="fa fa-3x fa-solid fa-image fa-flip text-primary mb-4"></i>
+                  <h5 className="mb-3">Compress Image</h5>
+                  <p className="m-0">Reduce Your Image Size Using This Tool</p>
+                </div>
+              </div>
+              
+              <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div className="feature-item bg-light rounded text-center p-4">
+                  <i className="fa fa-3x fa-solid fa-file-pdf text-primary mb-4"></i>
+                  <h5 className="mb-3">PDF Compressor</h5>
+                  <p className="m-0">Reduce Your PDF Size Using This Tool</p>
+                </div>
+              </div>
+              <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.5s"onClick={() => window.location.href = "/imagetopdf"}>
+                <div className="feature-item bg-light rounded text-center p-4">
+                  <i className="fa fa-3x fa-regular fa-object-group text-primary mb-4"></i>
+                  <h5 className="mb-3">Image To PDF</h5>
+                  <p className="m-0">Convert one or More Image in PDF </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container-xxl bg-primary fact py-5 wow fadeInUp" data-wow-delay="0.1s">
+          <div className="container py-5 px-lg-5">
+            <div className="row g-4">
+              <div className="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                <i className="fa fa-certificate fa-3x text-secondary mb-3"></i>
+                <h1 className="text-white mb-2" data-toggle="counter-up">1234</h1>
+                <p className="text-white mb-0">Years Experience</p>
+              </div>
+              <div className="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                <i className="fa fa-users-cog fa-3x text-secondary mb-3"></i>
+                <h1 className="text-white mb-2" data-toggle="counter-up">1234</h1>
+                <p className="text-white mb-0">Team Members</p>
+              </div>
+              <div className="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                <i className="fa fa-users fa-3x text-secondary mb-3"></i>
+                <h1 className="text-white mb-2" data-toggle="counter-up">1234</h1>
+                <p className="text-white mb-0">Satisfied Clients</p>
+              </div>
+              <div className="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                <i className="fa fa-check fa-3x text-secondary mb-3"></i>
+                <h1 className="text-white mb-2" data-toggle="counter-up">1234</h1>
+                <p className="text-white mb-0">Compleate Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container-xxl py-5">
+            <div className="container py-5 px-lg-5">
+                <div className="wow fadeInUp" data-wow-delay="0.1s">
+                    <p className="section-title text-secondary justify-content-center"><span></span>Forms<span></span></p>
+                    <h1 className="text-center mb-5">Make your image As Per Required from</h1>
+                    <h4 className="text-center mb-5">Just Upload Your Image or Pdf and Download</h4>
+
+                </div>
+                <div className="row g-4">
+                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div className="service-item d-flex flex-column text-center rounded">
+                            <div className="service-icon flex-shrink-0">
+                                <i className="fa fa-duotone fa-id-card fa-2x"></i>
+                            </div>
+                            <h5 className="mb-3">NSDL PAN CARD</h5>
+                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a className="btn btn-square" href="/"><i className="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div className="service-item d-flex flex-column text-center rounded">
+                            <div className="service-icon flex-shrink-0">
+                                <i className="fa fa-regular fa-id-card fa-2x"></i>
+                            </div>
+                            <h5 className="mb-3">UTI PAN CARD</h5>
+                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a className="btn btn-square" href="/"><i className="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div className="service-item d-flex flex-column text-center rounded">
+                            <div className="service-icon flex-shrink-0">
+                                <i className="fab fa-facebook-f fa-2x"></i>
+                            </div>
+                            <h5 className="mb-3">VOTER ID CARD</h5>
+                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a className="btn btn-square" href="/imagetopdf"><i className="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div className="service-item d-flex flex-column text-center rounded">
+                            <div className="service-icon flex-shrink-0">
+                                <i className="fa fa-mail-bulk fa-2x"></i>
+                            </div>
+                            <h5 className="mb-3">Email Marketing</h5>
+                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a className="btn btn-square" href="/"><i className="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div className="service-item d-flex flex-column text-center rounded">
+                            <div className="service-icon flex-shrink-0">
+                                <i className="fa fa-thumbs-up fa-2x"></i>
+                            </div>
+                            <h5 className="mb-3">PPC Advertising</h5>
+                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a className="btn btn-square" href="/"><i className="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div className="service-item d-flex flex-column text-center rounded">
+                            <div className="service-icon flex-shrink-0">
+                                <i className="fab fa-android fa-2x"></i>
+                            </div>
+                            <h5 className="mb-3">App Development</h5>
+                            <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <a className="btn btn-square" href="/"><i className="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+       
+        <a href="/" className="btn btn-lg btn-secondary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
+   
 
       </div>
 
-      <div className="container1 container my-3 ">
 
-        <div className="row">
-
-          <div className='col-md-4 col-sm-6 col-lg-3'>
-
-            <div className="card m-3 p-3 card1" onClick={handelClick}>
-
-              <img src={imagecomp} className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Compress Image</h5>
-
-                <p className="card-text">Change Your Image Size With High Quality</p>
+    </>
 
 
-
-              </div>
-            </div>
-            </div>
-            <div className='col-md-4 col-sm-6 col-lg-3'>
-
-              <div className="card m-3 p-3 ">
-
-                <img src={pdfcomp} className="card-ing-top" alt="..." />
-
-                <div className="card-body">
-
-                  <h5 className="card-title">PDF Compressor</h5>
-
-                  <p className="card-text">Change Your PDF Size With High Quality</p>
-
-
-                </div>
-
-              </div>
-
-            </div>
-
-            <div className='col-md-4 col-sm-6 col-lg-3'> <div className="card m-3 p-3">
-
-              <img src={imagecomp} className="card-img-top" alt="..." />
-              <div className="card-body">
-
-                <h5 className="card-title">JPG To PDF</h5>
-
-                <p className="card-text">Convert Your Image To PDF</p> {/* <a href="/" className="btn btn-primary">Go somewhere</a> */}
-
-              </div> </div>
-
-            </div>
-            
-
-            <div className='col-md-4 col-sm-6 col-lg-3' >
-
-              <div className="card m-3 p-3 col"> <img src={pdfcomp} className="card-img-top" alt="..." />
-
-                <div className="card-body">
-                  <h5 className="card-title">Merge PDF</h5>
-
-                  <p className="card-text">Add Your 2-3 Pdf In 1 Pdf</p>
-                  {/* <a href="/" className="btn btn-primary">Go somewhere</a> */}
-
-                </div>
-              </div>
-            </div>
-          </div >
-        </div >
-        
-
-
-      </>
-
-
-      )
+  )
 }
 
-      export default Home
+export default Home

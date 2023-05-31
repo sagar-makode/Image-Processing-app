@@ -2,10 +2,10 @@ import React, { useState, createRef } from "react";
 import Cropper from "react-cropper";
 import { Modal } from 'react-bootstrap';
 
-// import Cropper, { ReactCropperElement } from "react-cropper";
+
 import "cropperjs/dist/cropper.css";
-import "./imagecomp.css";
-// import CropImageCard from "./CropImage"
+
+
 
 
 
@@ -18,7 +18,7 @@ function Imagecomp() {
 
 
   const handleClose = () => setShowModal(false);
-  // const handleShow = () => setShowModal(true);
+
 
 
   const cropperRef = createRef();
@@ -72,8 +72,8 @@ function Imagecomp() {
     const canvas = document.createElement("canvas");
     const context = canvas.getContext("2d");
     const image = new Image();
-    const newWidth = 100;
-    const newHeight = 50;
+    const newWidth = 500;
+    const newHeight = 300;
     image.src = imageData;
     canvas.width = newWidth;
     canvas.height = newHeight;
@@ -106,7 +106,19 @@ function Imagecomp() {
 
   return (
     <>
-      <div className="container mt-4  col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+      
+      <div className="container-xxl py-5 bg-primary hero-header">
+                <div className="container my-5 py-5 px-lg-5">
+                    <div className="row g-5 py-5">
+                        <div className="col-12 text-center">
+                            <h1 className="text-white animated slideInDown">Edit Your Image Here</h1>
+                            <hr className="bg-white mx-auto mt-0" style={{width: "90px"}}/>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container mt-4  col-lg-6 col-md-6 col-sm-6 col-xs-6" >
         <div >
           <h2>Upload File</h2>
           <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-6 ">
@@ -206,6 +218,9 @@ function Imagecomp() {
 
 
       </div>
+
+
+
 
     </>
 
