@@ -20,20 +20,20 @@ function Navbar() {
                             <a href="/" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">PDF Tools</a>
                             <div className="dropdown-menu m-0">
                                 <a href="/imagetopdf" className="dropdown-item">Image To Pdf</a>
-                                <a href="testimonial.html" className="dropdown-item">Merge Pdf</a>
-                                <a href="404.html" className="dropdown-item">Resize Pdf</a>
+                                <a href="/" className="dropdown-item">Merge Pdf</a>
+                                <a href="/" className="dropdown-item">Resize Pdf</a>
                             </div>
                         </div>
                         <div className="nav-item dropdown">
                             <a href="/" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Latest Form</a>
                             <div className="dropdown-menu m-0">
-                                <a href="team.html" className="dropdown-item">Diploma Admission</a>
-                                <a href="testimonial.html" className="dropdown-item">ITI Admission</a>
-                                <a href="404.html" className="dropdown-item">Medical Admission</a>
+                                <a href="/" className="dropdown-item">Diploma Admission</a>
+                                <a href="/" className="dropdown-item">ITI Admission</a>
+                                <a href="/l" className="dropdown-item">Medical Admission</a>
                             </div>
                         </div>
                         <a href="/" className="nav-item nav-link">Contact</a>
-                        <a href="project.html" className="nav-item nav-link">About</a>
+                        <a href="/" className="nav-item nav-link">About</a>
 
                     </div>
                     <a href="/" className="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Sign In</a>
