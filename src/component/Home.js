@@ -1,9 +1,17 @@
 import React from 'react'
 import img from "./img/hero.png"
+import { Link,useNavigate } from 'react-router-dom'
+
+
 
 
 function Home() {
- 
+  const navigate = useNavigate();
+
+
+
+
+
 
   return (
     <>
@@ -17,8 +25,8 @@ function Home() {
                         <div className="col-lg-6 text-center text-lg-start">
                             <h1 className="text-white mb-4 animated slideInDown">Make Your Image / PDF Without Losing Quality</h1>
                             <p className="text-white pb-3 animated slideInDown">In this service that helps you improve your images and PDF documents without reducing their visual appeal. It allows you to make changes like reducing file size, resizing images, converting formats, and compressing PDFs while ensuring the content looks great.</p>
-                            <a href="/" className="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Read More</a>
-                            <a href="/" className="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                            <Link to="/" className="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Read More</Link>
+                            <Link to="/" className="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Contact Us</Link>
                         </div>
                         <div className="col-lg-6 text-center text-lg-start">
                             <img className="img-fluid animated zoomIn" src= {img} alt=""/>
@@ -30,7 +38,7 @@ function Home() {
         <div className="container-xxl py-5">
           <div className="container py-5 px-lg-5">
             <div className="row g-4">
-              <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.1s" onClick={() => window.location.href = "/editimage"}>
+              <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.1s"  onClick={() => navigate('/editimage')}>
                 <div className="feature-item bg-light rounded text-center p-4">
                   <i className="fa fa-3x fa-solid fa-image fa-flip text-primary mb-4"></i>
                   <h5 className="mb-3">Compress Image</h5>
@@ -45,7 +53,7 @@ function Home() {
                   <p className="m-0">Reduce Your PDF Size Using This Tool</p>
                 </div>
               </div>
-              <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.5s"onClick={() => window.location.href = "/imagetopdf"}>
+              <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.5s"onClick={() => navigate('/imagetopdf')}>
                 <div className="feature-item bg-light rounded text-center p-4">
                   <i className="fa fa-3x fa-regular fa-object-group text-primary mb-4"></i>
                   <h5 className="mb-3">Image To PDF</h5>
@@ -97,7 +105,7 @@ function Home() {
                             </div>
                             <h5 className="mb-3">NSDL PAN CARD</h5>
                             <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href="/"><i className="fa fa-arrow-right"></i></a>
+                            <Link className="btn btn-square" to="/"><i className="fa fa-arrow-right"></i></Link>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -107,7 +115,7 @@ function Home() {
                             </div>
                             <h5 className="mb-3">UTI PAN CARD</h5>
                             <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href="/"><i className="fa fa-arrow-right"></i></a>
+                            <Link className="btn btn-square" to="/"><i className="fa fa-arrow-right"></i></Link>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -117,7 +125,7 @@ function Home() {
                             </div>
                             <h5 className="mb-3">VOTER ID CARD</h5>
                             <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href="/imagetopdf"><i className="fa fa-arrow-right"></i></a>
+                            <Link className="btn btn-square" to="/imagetopdf"><i className="fa fa-arrow-right"></i></Link>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -127,7 +135,7 @@ function Home() {
                             </div>
                             <h5 className="mb-3">Email Marketing</h5>
                             <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href="/"><i className="fa fa-arrow-right"></i></a>
+                            <Link className="btn btn-square" to="/"><i className="fa fa-arrow-right"></i></Link>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -137,7 +145,7 @@ function Home() {
                             </div>
                             <h5 className="mb-3">PPC Advertising</h5>
                             <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href="/"><i className="fa fa-arrow-right"></i></a>
+                            <Link className="btn btn-square" to="/"><i className="fa fa-arrow-right"></i></Link>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -147,7 +155,7 @@ function Home() {
                             </div>
                             <h5 className="mb-3">App Development</h5>
                             <p className="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a className="btn btn-square" href="/"><i className="fa fa-arrow-right"></i></a>
+                            <Link className="btn btn-square" to="/"><i className="fa fa-arrow-right"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -156,7 +164,7 @@ function Home() {
         
 
        
-        <a href="/" className="btn btn-lg btn-secondary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></a>
+        <Link to="/" className="btn btn-lg btn-secondary btn-lg-square back-to-top"><i className="bi bi-arrow-up"></i></Link>
    
 
       </div>
