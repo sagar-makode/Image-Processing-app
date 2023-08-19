@@ -46,10 +46,10 @@ function Home() {
                 </div>
               </div>
               
-              <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.3s" onClick={() => navigate('/pdftoimg')}>
+              <div className="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div className="feature-item bg-light rounded text-center p-4">
                   <i className="fa fa-3x fa-solid fa-file-pdf text-primary mb-4"></i>
-                  <h5 className="mb-3">PDF To Image</h5>
+                  <h5 className="mb-3">PDF Compressor</h5>
                   <p className="m-0">Reduce Your PDF Size Using This Tool</p>
                 </div>
               </div>

@@ -19,8 +19,8 @@ function Navbar() {
                         <div className="nav-item dropdown">
                             <Link to="/" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">PDF Tools</Link>
                             <div className="dropdown-menu m-0">
-                                <Link to="/imagetopdf" className="dropdown-item">Image To PDF</Link>
-                                <Link to="/pdftoimg" className="dropdown-item">PDF to Image</Link>
+                                <Link to="/imagetopdf" className="dropdown-item">Image To Pdf</Link>
+                                <Link to="/" className="dropdown-item">Merge Pdf</Link>
                                 <Link to="/" className="dropdown-item">Resize Pdf</Link>
                             </div>
                         </div>
