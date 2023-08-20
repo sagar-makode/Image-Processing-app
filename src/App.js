@@ -14,6 +14,7 @@ import Imagecomp from './component/imagecomp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./component/css/style.css"
 import ImagetoPdf from './component/ImagetoPdf';
+import PdftoImg from './component/pdftoimg';
 <link href="img/favicon.ico" rel="icon"></link>
 
 
@@ -32,6 +33,7 @@ class App extends Component {
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/editimage" element={<Imagecomp/>} />
           <Route exact path="/imagetopdf" element={<ImagetoPdf/>} />
+          <Route exact path='/pdftoimg' element={<PdftoImg/>}/>
         </Routes>
         <Footer/>
         
