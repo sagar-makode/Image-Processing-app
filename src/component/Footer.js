@@ -7,7 +7,7 @@ function Footer() {
                 <div className="row g-5">
                 <div className="col-md-6 col-lg-3">
                         <p className="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a className="btn btn-link" href="/">About Us</a>
+                        <a className="btn btn-link" href="/">About  Us</a>
                         <a className="btn btn-link" href="/">Contact Us</a>
                         <a className="btn btn-link" href="/">Privacy Policy</a>
                         <a className="btn btn-link" href="/">Terms & Condition</a>
